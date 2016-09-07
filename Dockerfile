@@ -5,7 +5,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     apt-get -y dist-upgrade
 
 RUN DEBIAN_FRONTEND=noninteractive \
-    apt-get install python-pip python-dev sudo aptitude -y
+    apt-get install python-pip python-dev sudo aptitude libffi-dev libssl-dev -y
 
 RUN apt-get clean
 RUN pip install PyYAML jinja2 paramiko ansible
