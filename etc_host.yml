@@ -3,3 +3,4 @@
   tasks:
   - name: insert 127.0.0.2 line in /etc/hosts
     lineinfile: dest=/etc/hosts regexp='^127\.0\.0\.2' line="127.0.0.2\tlocalhost2"
+                unsafe_writes=True
